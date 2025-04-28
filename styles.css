@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fffaf5;
+  color:  #4f2312;
+  
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(248, 241, 231);
+  padding: 0.0rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  /* font-size: 1.5rem; */
+  /* font-weight: bold; */
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/* .nav-links a:hover {
+  color: #ffc107;
+} */
+
+/* Hero */
+.hero {
+  /* height: 2.25rem; */
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  font-family: Insaniburger;
+  /* font-size: 30px; */
+  /* font-size: 5vh; */
+  font-size: 2rem;
+  color: #4f2312;
+}
+
+.hero-content h1 {
+  
+  font-size: 3rem;
+  font-family: flame;
+  color: #4f2312;
+  margin-bottom: 1rem;
+  
+  
+}
+
+
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 436px;
+  
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #512314;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  /* position: fixed; */
+  bottom: 0;
+  margin-top: 1rem;
+ height: 110px; */
+  width: 100%;
+}
+
+
+/* Nav Bar */
+.newbar {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+   bottom: 0px; /*leaves space for footer */
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #333;
+  gap: 4px;
+  /* cursor: pointer; */
+  transition: transform 0.2s;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.nav-item img {
+  height: 20px;
+}
+
+.btn1:hover{
+ background-color: #333;
+}
+.btn2 button:hover{
+  background-color: #4f2312;
+}
+.main{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: none;
+  margin-left: none;
+}
+.sub1 img{
+  height: 20rem;
+  margin-right: none;
+  margin-left: none;
+}
+.subapp img{
+ padding: 5px; 
+  width: 10rem;
+  margin-right: none;
+  margin-left: none;
+  padding-right: none;
+   padding-left: none;
+}
+.sub2 {
+  font-family: flame;
+  color: rgb(81, 35, 21);
+  margin-right: none;
+  margin-left: none;
+}
+.text1 h2{
+  display: flexbox;
+  font-size: 2.3rem;
+  font-family: flame;
+  color: rgb(81, 35, 21);
+  margin-right: none;
+  margin-left: none;
+}
+
+.text3 p{
+  font-size: 12px;
+  color: rgb(81, 35, 21);
+  margin-right: none;
+  margin-left: none;
+}
+.sub2 p{
+  font-family: Arial, Helvetica, sans-serif;  
+   width: 49%;
+   margin-right: none;
+   margin-left: none;
+}
+.text2{
+  padding-right: none;
+   padding-left: none;
+}
+@media screen and (max-width: 768px){
+  .menu-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu-item {
+    width: 100%;
+    max-width: 400px;
+  }
+  .sub1 img{
+    height: 10rem;
+    margin-right: none;
+    margin-left: none;
+  }
+  .subapp img{
+   padding: 5px; 
+    width: 5rem;
+    margin-right: none;
+    margin-left: none;
+    padding-right: none;
+     padding-left: none;
+  }
+  
+  .text1 h2{
+    font-size: 1.5rem;
+    font-family: flame;
+    color: rgb(81, 35, 21);
+    margin-right: none;
+    margin-left: none;
+  }
+  .btn{
+    display: none;
+  }
+  h1{
+    display: none;
+
+  }
+  .hero{
+    flex-direction: column;
+  }
+  .hero-content{
+    order: 2;
+  }
+  
+  
+}
